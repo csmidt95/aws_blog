@@ -138,6 +138,14 @@ h2 {
     border-radius: 5px;
 }
 
+/* Centered content styling */
+.centered-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
 /* Fade-in Animation */
 .fade-in {
     opacity: 0;

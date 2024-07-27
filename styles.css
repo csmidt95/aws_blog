@@ -23,7 +23,7 @@ header {
 }
 
 #banner {
-    max-height: 75vh; /* Set the maximum height to be 1/10th of the viewport height */
+    max-height: 75vh; /* Set the maximum height to be 3/4th of the viewport height */
     width: auto; /* Let the width adjust proportionally */
     display: block;
     margin: 0 auto 20px;
@@ -42,6 +42,27 @@ h1 {
 #contact {
     font-size: 1.1em;
     color: #555;
+}
+
+/* Add specific link styling within #contact */
+#contact a {
+    color: #333; /* Change to your preferred color */
+    text-decoration: none;
+    margin-right: 10px; /* Space between links */
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* General link styling */
+a {
+    color: #1a0dab; /* Default color for links, change as needed */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 nav {

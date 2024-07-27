@@ -23,8 +23,8 @@ header {
 }
 
 #banner {
-    width: 100%;
-    height: auto;
+    max-height: 75vh; /* Set the maximum height to be 1/10th of the viewport height */
+    width: auto; /* Let the width adjust proportionally */
     display: block;
     margin: 0 auto 20px;
 }
@@ -176,8 +176,14 @@ h2 {
     0% {
         transform: scale(1) rotate(0deg);
     }
+    25% {
+        transform: scale(1.5) rotate(90deg);
+    }
     50% {
-        transform: scale(2) rotate(180deg);
+        transform: scale(1.5) rotate(180deg);
+    }
+    75% {
+        transform: scale(1.5) rotate(270deg);
     }
     100% {
         transform: scale(1) rotate(360deg);
@@ -186,4 +192,5 @@ h2 {
 
 #welcome-text {
     display: inline-block;
+    animation: welcomeAnimation 4s ease-in-out infinite;
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="connect.html">Connect</a></li>
+        </ul>
+    </nav>
+    <header class="fade-in">
+        <img src="headshot.jpeg" alt="Headshot" id="headshot">
+        <h1 id="name">Cooper Smidt</h1>
+        <p id="contact">Email: csmidt95@gmail.com | Phone: (713) 829-5757</p>
+    </header>
+    <main>
+        <section id="employment" class="fade-in">
+            <h2>Employment History</h2>
+            <div id="timeline">
+                <!-- Employment entries will be inserted here by JavaScript -->
+            </div>
+        </section>
+        <section id="education" class="fade-in">
+            <h2>Education</h2>
+            <div id="education-list">
+                <div class="education-entry">
+                    <h3>Louisiana State University</h3>
+                    <p>Bachelor of Science</p>
+                    <p>Petroleum Engineering</p>
+                </div>
+                <!-- Add more entries as needed -->
+            </div>
+        </section>
+        <section id="skills" class="fade-in">
+            <h2>Skills & Technologies</h2>
+            <ul id="skills-list">
+                <li>dbt Modeling & Configuration</li>
+                <li>Dimensional Modeling</li>
+                <li>Git</li>
+                <li>Snowflake</li>
+                <li>dbt Core</li>
+                <li>Airbyte/Stitch/Fivetran</li>
+            </ul>
+        </section>
+        <section id="certifications" class="fade-in">
+            <h2>Certifications</h2>
+            <ul id="skills-list">
+                <li>dbt Analytics Engineering</li>
+            </ul>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

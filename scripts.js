@@ -41,19 +41,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const timelineContainer = document.getElementById('timeline');
 
-    employmentData.forEach((entry) => {
-        const div = document.createElement('div');
-        div.className = 'timeline-entry';
-        div.innerHTML = `
-            <h3>${entry.title} at ${entry.company}</h3>
-            <p><strong>Duration:</strong> ${entry.duration}</p>
-            <p>${entry.details}</p>
-            <ul>
-                ${entry.responsibilities.map(responsibility => `<li>${responsibility}</li>`).join('')}
-            </ul>
-        `;
-        timelineContainer.appendChild(div);
-    });
+    if (timelineContainer) {
+        employmentData.forEach((entry) => {
+            const div = document.createElement('div');
+            div.className = 'timeline-entry';
+            div.innerHTML = `
+                <h3>${entry.title} at ${entry.company}</h3>
+                <p><strong>Duration:</strong> ${entry.duration}</p>
+                <p>${entry.details}</p>
+                <ul>
+                    ${entry.responsibilities.map(responsibility => `<li>${responsibility}</li>`).join('')}
+                </ul>
+            `;
+            timelineContainer.appendChild(div);
+        });
+    }
 
     // Intersection Observer for fade-in effect
     const fadeElements = document.querySelectorAll('.fade-in');
@@ -77,5 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fadeElements.forEach(element => {
         observer.observe(element);
+    });
+
+    // Add active class to current page's nav link
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
     });
 });

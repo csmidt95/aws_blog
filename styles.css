@@ -4,10 +4,17 @@ body, h1, h2, p, ul {
     padding: 0;
 }
 
+/* Ensure consistent styling across browsers */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    margin: 0; /* Ensure no margin around body */
+    padding: 0; /* Ensure no padding around body */
 }
 
 header {
@@ -59,6 +66,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 section {

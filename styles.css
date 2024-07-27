@@ -170,3 +170,20 @@ h2 {
     margin-bottom: 5px;  /* Space between bullet points */
     padding-left: 10px;  /* Extra padding for better indentation */
 }
+
+/* Animation for welcome text */
+@keyframes welcomeAnimation {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(2) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+#welcome-text {
+    display: inline-block;
+}

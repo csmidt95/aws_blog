@@ -88,4 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active');
         }
     });
+
+    // Trigger welcome text animation
+    const welcomeText = document.getElementById('welcome-text');
+    if (welcomeText) {
+        welcomeText.style.animation = 'welcomeAnimation 2s ease-in-out';
+    }
 });
